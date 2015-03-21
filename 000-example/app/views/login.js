@@ -1,6 +1,6 @@
 "use strict";
 
-var BaseView = require('../../../../shared/base/view'),
+var BaseView = require('central/shared/base/view'),
     User = require('../models/user.coffee');
 
 module.exports = BaseView.extend({

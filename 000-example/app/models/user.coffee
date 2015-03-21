@@ -1,4 +1,4 @@
-BaseModel = require('../../../../shared/base/model')
+BaseModel = require('central/shared/base/model')
 
 User = BaseModel.extend
 

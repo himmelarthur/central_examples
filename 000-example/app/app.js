@@ -3,7 +3,7 @@
 var path = require('path'),
     $ = require('jquery'),
     requireJade = require('require-jade'),
-    BaseApplication = require('../../../client/app.coffee'),
+    BaseApplication = require('central/client/app.coffee'),
     ClientController = require('./controller.coffee');
 
 var Application = window.Application = BaseApplication.extend({

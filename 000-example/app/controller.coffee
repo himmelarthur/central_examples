@@ -1,6 +1,6 @@
 "use strict"
 
-BaseController = require('../../../client/controller.coffee')
+BaseController = require('central/client/controller.coffee')
 IndexView = require('./views/index')
 LoginView = require('./views/login')
 

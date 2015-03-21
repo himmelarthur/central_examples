@@ -5,7 +5,7 @@ var remapify = require('remapify');
 module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON('../../package.json'),
+    pkg: grunt.file.readJSON('./package.json'),
     browserify: {
       options: {
         browserifyOptions: {
