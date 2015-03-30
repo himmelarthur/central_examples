@@ -1,0 +1,17 @@
+html
+    head
+    body
+        h1 Hello World!
+        h3 This is the Central Server test number 1
+        .content
+    script(src="/script.js")
+    script.
+        var locals = !{JSON.stringify(locals)};
+        (function () {
+            new Application({
+                el: '.content',
+                routes: locals.routes,
+                viewsPath: locals.viewsPath,
+                templatesPath: locals.templatesPath
+            });
+        }());
