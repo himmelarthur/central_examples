@@ -10,18 +10,19 @@ class Controller extends BaseController
 
     index: @::view(IndexView) (params, callback) ->
         articles = new Articles([
-            {name: 1}
-            {name: 2}
-            {name: 3}
-            {name: 12}
+            {name: 'Hello'}
+            {name: 'First Central App'}
+            {name: 'Looks great'}
+            {name: 'Yay!'}
         ])
+        collection: articles
+
+    page2: @::viewWithCallback(Page2View) (params, callback) ->
+        articles = new Articles()
         articles.fetch
             success: ->
-                callback(collection: articles)
+                callback collection: articles
             error: ->
-                callback(collection: articles)
-
-    page2: @::view(Page2View) ->
-
+                callback collection: articles
 
 module.exports = Controller
